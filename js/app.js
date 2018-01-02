@@ -95,3 +95,27 @@ let atm = {
 
   }
 }
+//
+// 1. Create an object called `Leonardo`.
+// 2. Leonardo should have a name attribute of "Leonardo", a color attribute of "Blue", and a weapon attribute of "Katana".
+// 3. Leonardo should also have a boolean property called pizzaEaten that is initially set to false.
+// 4. Add a method to Leonardo called eatPizza() which does the following:
+//     - If pizzaEaten is true, print out "Leonardo has already eaten pizza" and set pizzaEaten to false.
+//     - If pizzaEaten is false, print out "Leonardo is eating pizza" and set pizzaEaten to true.
+
+let Leonardo = {
+  name: "Leonardo"
+  color: "Blue"
+  weapon: "Katana"
+  pizzaEaten: false
+  eatPizza: function(){
+    if(this.pizzaEaten){
+      console.log("Leaonard has already eaten Pizza.");
+      this.pizzaEaten = false
+    } else {
+      console.log("Leonardo has already Eaten");
+    }
+
+  }
+
+}
