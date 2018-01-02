@@ -6,6 +6,9 @@ var tamagotchi1 = {
   health: 10,
   cry: function(){
     console.log("Waaaaaa!");
+  },
+  puke: function(){
+    console.log("Bleeeeh :O~~");
   }
 }
 
