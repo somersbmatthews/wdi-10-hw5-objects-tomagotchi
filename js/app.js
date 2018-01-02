@@ -104,18 +104,47 @@ let atm = {
 //     - If pizzaEaten is false, print out "Leonardo is eating pizza" and set pizzaEaten to true.
 
 let Leonardo = {
-  name: "Leonardo"
-  color: "Blue"
-  weapon: "Katana"
-  pizzaEaten: false
+  name: "Leonardo",
+  color: "Blue",
+  weapon: "Katana",
+  pizzaEaten: false,
   eatPizza: function(){
     if(this.pizzaEaten){
       console.log("Leaonard has already eaten Pizza.");
-      this.pizzaEaten = false
+      this.pizzaEaten = false;
     } else {
-      console.log("Leonardo has already Eaten");
+      console.log("Leonardo is eating pizza");
+      this.pizzaEaten = true;
     }
+  }
+}
 
+
+// 1. Create an object called `calculator`
+// 2. Create a property called `output`
+// 3. Create a method inside your object that will multiply two numbers and change the `output` value to this current value. This method should also log the value of `output`.
+// 4. Create a function that will divide two numbers. It should also change the `output` value to this current value. This method should also log the value of `output`.
+// 5. Practice using your calculator with some pairs (10, 2), (-2, 8), (2, 2).
+// 6. If there's additional time, add methods for `addition` and `subtraction`
+
+
+let calculator = {
+  output: 0
+  multiply: function(num1, num2){
+    this.output = num1*num2;
+    console.log(this.output);
+  }
+  divide: function(num1, num2){
+    this.output = num1/num2;
+    console.log(this.output);
+  }
+  addition: function(num1, num2){
+    this.output = num1+num2;
+    console.log(this.output);
+  }
+  substraction: function(num1, num2){
+    this.output = num1-num2;
+    console.log(this.output);
   }
 
 }
