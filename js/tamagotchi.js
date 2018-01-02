@@ -63,6 +63,10 @@ var tamagotchi2 = {
 let player = {
   name: "Somers",
   sayName: function(){
-
+    console.log("Hi, my name is "+this.name);
+  },
+  feedTamagotchi: function(){
+    tamagotchi1.food++;
+    tamagotchi2.food++;
   }
 }
