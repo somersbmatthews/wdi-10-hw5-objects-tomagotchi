@@ -58,3 +58,40 @@ let greeter = {
     console.log("Oh right! " + name + " how could I forget...!");
   }
 }
+
+// Make an object called `stringCollector`, which has:
+// 1. a `collection` property - an array to hold strings
+// 2. a `collect` method which takes a string as a parameter
+// 3. the string collector prefers the strings to be totally reversed in their collection, however, so make sure to reverse it before adding it to the collection
+// 4. add an `admireCollection` method which prints out each string in the collection to the console, one line at a time
+
+let stringCollector = {
+  collection: [],
+  collect: function(str){
+    let newStr = str.split("").reverse().join("");
+    this.collection.push(newStr);
+  },
+  admireCollection: function(){
+    for(let i = 0; i<this.collection.length; i++) {
+      console.log(this.collection + "\n");
+    }
+  }
+}
+
+
+// Make an object called atm which has two properties:
+//   totalCash, the total amount of cash in the atm
+// dispenseTwenties, a method with takes a number of twenties and, if there is enough cash, returns the total number of cash it is giving out.
+// If there is not enough cash, return null instead.
+
+let atm = {
+  totalCash: 4000,
+  dispenseTwenties: function(numOfTwenties){
+    if((this.totalCash - (20*numOfTwenties))<0){
+      return null;
+    } else {
+      return 20*numOfTwenties
+    }
+
+  }
+}
