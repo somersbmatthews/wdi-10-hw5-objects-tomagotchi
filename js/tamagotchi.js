@@ -65,8 +65,16 @@ let player = {
   sayName: function(){
     console.log("Hi, my name is "+this.name);
   },
-  feedTamagotchi: function(){
-    tamagotchi1.food++;
-    tamagotchi2.food++;
+  feedTamagotchi: function(name1, name2){
+    name1.food++;
+    name2.food++;
+  },
+  medicateTamagotchi: function(name1, name2){
+    name1.health++;
+    name2.health++;
+  },
+  knockOutTamagotchi: function(name1, name2){
+    name1.stamina++;
+    name2.stamina++;
   }
 }
