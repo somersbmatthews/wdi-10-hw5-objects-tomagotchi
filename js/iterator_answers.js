@@ -41,10 +41,44 @@ arrayMapper();
 // ```
 const arr = [8, 8, 8, 8, 8, 8, 8, 8];
 function multiplier() {
-  let product = 1;
+
 let newProduct = arr.reduce(function(prev,current){
   return prev*current;
 });
 console.log(newProduct);
 };
 multiplier();
+//
+// 1. Using iterators to find the total sheepCount of sheep shorn by sheep shearers at the 1623 Sheep Shearing Feast:
+//
+// ```
+const sheepShearers = [
+    {
+        name: "Tim",
+        age: 20,
+        sheepCount: 18
+    },
+    {
+        name: "C3PO",
+        age: 200,
+        sheepCount: 320
+    },
+    {
+        name: "Cousin It",
+        age: Infinity,
+        sheepCount: 2900
+    }
+];
+// ```
+//
+// Expected Output:
+// ```
+// => 3238
+function sheepCount(){
+  let sum = 0;
+  for(let i=0; i<sheepShearers.length; i++) {
+    sum = sum + sheepShearers[i].sheepCount;
+  console.log(sum);
+  }
+};
+sheepCount();
