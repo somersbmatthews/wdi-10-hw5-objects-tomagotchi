@@ -31,7 +31,20 @@ let newArray = more_words.map(function(word){
     return word.substring(0,1);
 
   });
-  console.log(newArray); 
+  console.log(newArray);
 };
-
 arrayMapper();
+
+// `.reduce` iterates over the elements in an array and smooshes them together into a single variable according to the instructions in the iterator. Like `.map`, it returns a new value and does not alter the original array.
+//
+// 1. Return the *product* of the numbers in `arr`.
+// ```
+const arr = [8, 8, 8, 8, 8, 8, 8, 8];
+function multiplier() {
+  let product = 1;
+let newProduct = arr.reduce(function(prev,current){
+  return prev*current;
+});
+console.log(newProduct);
+};
+multiplier();
