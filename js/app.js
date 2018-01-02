@@ -129,19 +129,19 @@ let Leonardo = {
 
 
 let calculator = {
-  output: 0
+  output: 0,
   multiply: function(num1, num2){
     this.output = num1*num2;
     console.log(this.output);
-  }
+  },
   divide: function(num1, num2){
     this.output = num1/num2;
     console.log(this.output);
-  }
+  },
   addition: function(num1, num2){
     this.output = num1+num2;
     console.log(this.output);
-  }
+  },
   substraction: function(num1, num2){
     this.output = num1-num2;
     console.log(this.output);
