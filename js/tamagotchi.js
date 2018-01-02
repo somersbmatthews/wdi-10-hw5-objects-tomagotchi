@@ -7,7 +7,7 @@ var tamagotchi1 = {
   cry: function(){
     this.food--;
     console.log("Waaaaaa!");
-    console.log("There is " + this.food + " in the tamagotchi's tummy.");
+    console.log("There is " + this.food + " in "+this.name+"'s tummy.");
   },
   puke: function(){
     console.log(this.name + ": Bleeeeh :O~~");
@@ -27,3 +27,21 @@ var tamagotchi1 = {
 // 7. Update the `yawn` and `puke` methods to output the Tamogatchi's name in the sentence with the yawn or puke action. Execute these methods to confirm the output.
 // 8. Update the `cry` method to decrease the amount of food in the Tamagotchi's tummy.
 // 9. In addition, the `cry` method should now also log a sentence that will tell us the amount of food in the Tamagotchi's tummy.
+var tamagotchi2 = {
+  name: "Peter",
+  creatureType: "Dragon",
+  food: 10,
+  stamina: 10,
+  health: 10,
+  cry: function(){
+    this.food--;
+    console.log("Waaaaaa!");
+    console.log("There is " + this.food + " in "+this.name+"'s tummy.");
+  },
+  puke: function(){
+    console.log(this.name + ": Bleeeeh :O~~");
+  },
+  yawn: function(){
+    console.log(this.name + ": Yaaaawwwwn!");
+  }
+}
