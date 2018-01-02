@@ -86,3 +86,18 @@ let player = {
     name2.stamina++;
   }
 }
+
+function hungerTimer(){
+  tamagotchi1.cry();
+  tamagotchi2.cry();
+};
+
+function yawnTimer() {
+  tamagotchi1.yawn();
+  tamagotchi2.yawn();
+};
+
+function sickTimer() {
+  tamagotchi1.puke();
+  tamagotchi2.puke();
+};
