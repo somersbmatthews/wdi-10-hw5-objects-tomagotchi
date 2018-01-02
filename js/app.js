@@ -25,5 +25,36 @@ let myInformation = {
   },
   ageAYear: function(){
     this.age++;
+  },
+  changeName: function(){
+    let name = prompt("what is your name?");
+    this.name = name;
+  },
+  setNameToRumple: function(){
+    this.name = "Rumpelstiltskin";
+  }
+}
+
+// Create an object called greeter.
+// Inside the greeter object, create a method called hello that takes a name as a parameter and returns a greeting message followed by the name parameter.
+// Example: Oh hello there, Matthew
+//
+// Create another method inside greeter called goodbye that takes a name as a parameter and returns a farewell greeting followed by the name parameter.
+// Example: Arrivederci, Matthew!
+//
+// Create a final method inside greeter called whoAreYou that takes a name as a parameter and returns "Oh right! ", followed by the name parameter, followed by " how could I forget...!"
+// Example: Oh right! Matthew how could i forget...!
+//
+// Play around executing your functions by accessing them through the object.
+
+let greeter = {
+  hello: function(name){
+    console.log("Oh hello there, " + name);
+  },
+  goodbye: function(name){
+    console.log("Arrivederci, " + name);
+  },
+  whoAreYou: function(name){
+    console.log("Oh right! " + name + " how could I forget...!");
   }
 }
