@@ -21,11 +21,11 @@ var tamagotchi1 = {
   },
   start: function(){
 
-    setInterval(function(){hungerTimer(),6000});
+    setInterval(function(){hungerTimer()},6000);
 
-    setInterval(function(){yawnTimer(),10000});
+    setInterval(function(){yawnTimer()},10000);
 
-    setInterval(function(){sickTimer(),25000});
+    setInterval(function(){sickTimer()},25000);
   }
 }
 
@@ -101,3 +101,5 @@ function sickTimer() {
   tamagotchi1.puke();
   tamagotchi2.puke();
 };
+
+tamagotchi1.start();

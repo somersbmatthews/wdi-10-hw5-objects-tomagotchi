@@ -1,8 +1,11 @@
 // 1. Make an object called `clicker`, which has a `clickCount` property, and a `click` method.
 // 2. Have the `click` method increment the `clickCount` by 1 each time it is called.
 
+// define the clicker object
 let clicker = {
+   // set clickCount to zero
   clickCount: 0,
+  // define click method
   click: function(){
     this.clickCount++;
   }
@@ -16,20 +19,25 @@ let clicker = {
 // 6. Create another function that can be used to change the value of your `name`.
 // 7. You're feeling funky and decide that your new name is `Rumpelstiltskin`. Call the method that will update your name and assign this new name. Log your object to confirm the changes.
 
+// define myInformation object
 let myInformation = {
   name: 'Somers',
   age: 35,
   fact: 'hates avacado',
+  // define statement method
   statement: function(){
     return this.name, this.fact, this.age + 10;
   },
+  // define ageAYear method that ads one to year
   ageAYear: function(){
     this.age++;
   },
+  // define changeName method that asks for your name and then saves
   changeName: function(){
     let name = prompt("what is your name?");
     this.name = name;
   },
+  // define setNameToRumple method that sets the string "Rumplestiltskin"
   setNameToRumple: function(){
     this.name = "Rumpelstiltskin";
   }
@@ -47,13 +55,17 @@ let myInformation = {
 //
 // Play around executing your functions by accessing them through the object.
 
+// define the greeter object
 let greeter = {
+  // define hello method that says hello
   hello: function(name){
     console.log("Oh hello there, " + name);
   },
+  // define goodbye function that says arrivederci
   goodbye: function(name){
     console.log("Arrivederci, " + name);
   },
+  // define whoAreYou function that says "Oh right! ...
   whoAreYou: function(name){
     console.log("Oh right! " + name + " how could I forget...!");
   }
@@ -65,12 +77,15 @@ let greeter = {
 // 3. the string collector prefers the strings to be totally reversed in their collection, however, so make sure to reverse it before adding it to the collection
 // 4. add an `admireCollection` method which prints out each string in the collection to the console, one line at a time
 
+// define object stringCollector
 let stringCollector = {
   collection: [],
+  // define collect method that adds to the collection array
   collect: function(str){
     let newStr = str.split("").reverse().join("");
     this.collection.push(newStr);
   },
+  // define admireCollection method that displays the collection array
   admireCollection: function(){
     for(let i = 0; i<this.collection.length; i++) {
       console.log(this.collection + "\n");
@@ -86,6 +101,7 @@ let stringCollector = {
 
 let atm = {
   totalCash: 4000,
+  // define method that gives 20 dollar denominations
   dispenseTwenties: function(numOfTwenties){
     if((this.totalCash - (20*numOfTwenties))<0){
       return null;
@@ -108,6 +124,7 @@ let Leonardo = {
   color: "Blue",
   weapon: "Katana",
   pizzaEaten: false,
+  // define method that sets pizzaeaten to false
   eatPizza: function(){
     if(this.pizzaEaten){
       console.log("Leaonard has already eaten Pizza.");
@@ -130,18 +147,22 @@ let Leonardo = {
 
 let calculator = {
   output: 0,
+  // define method that multiplies two numbers
   multiply: function(num1, num2){
     this.output = num1*num2;
     console.log(this.output);
   },
+  // define method that divides two numbers
   divide: function(num1, num2){
     this.output = num1/num2;
     console.log(this.output);
   },
+  // define method that adds two numbers
   addition: function(num1, num2){
     this.output = num1+num2;
     console.log(this.output);
   },
+  // define method that subtracts two numbers
   substraction: function(num1, num2){
     this.output = num1-num2;
     console.log(this.output);
