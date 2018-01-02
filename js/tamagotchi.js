@@ -18,6 +18,14 @@ var tamagotchi1 = {
     this.stamina--;
     console.log(this.name + ": Yaaaawwwwn!");
     console.log(this.name +" has " +this.stamina+ " left.");
+  },
+  start: function(){
+
+    setInterval(function(){hungerTimer(),6000});
+
+    setInterval(function(){yawnTimer(),10000});
+
+    setInterval(function(){sickTimer(),25000});
   }
 }
 
